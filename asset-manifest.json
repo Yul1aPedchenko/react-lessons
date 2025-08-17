@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-lessons/static/css/main.f855e6bc.css",
+    "main.js": "/react-lessons/static/js/main.d1ad18be.js",
+    "index.html": "/react-lessons/index.html",
+    "main.f855e6bc.css.map": "/react-lessons/static/css/main.f855e6bc.css.map",
+    "main.d1ad18be.js.map": "/react-lessons/static/js/main.d1ad18be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.d1ad18be.js"
+  ]
+}
