@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 // import { L7 } from "./components/l7/L7";
 // import { L8 } from "./components/l8/L8";
