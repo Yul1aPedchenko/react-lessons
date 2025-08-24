@@ -8,8 +8,8 @@ export class StickerPack extends Component {
     selectedSticker: null,
   };
 
-  handleSelect = (label) => {
-    this.setState({ selectedSticker: label });
+  handleSelect = (sticker) => {
+    this.setState({ selectedSticker: sticker });
   };
 
   render() {
