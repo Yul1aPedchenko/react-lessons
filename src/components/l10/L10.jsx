@@ -55,7 +55,6 @@ export class L10 extends Component {
   };
 
   render() {
-    const { todos, filter } = this.state;
     const visibleTodos = this.getVisibleTodos();
     return (
       <>

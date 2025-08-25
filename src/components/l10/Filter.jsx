@@ -5,7 +5,7 @@ export class Filter extends Component {
     this.props.onChange(e.target.value);
   };
   render() {
-    const { value, onChange } = this.props;
+    const { value } = this.props;
     return (
       <div>
         <input
