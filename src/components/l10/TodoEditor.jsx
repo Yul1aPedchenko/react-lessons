@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Input, FormBtn } from "./Styles/Filter";
 
 export class TodoEditor extends Component {
   state = {
@@ -24,13 +25,13 @@ export class TodoEditor extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input
+        <Input
           type="text"
           value={this.state.textValue}
           onChange={this.handlechange}
           placeholder="Нове завдання"
         />
-        <button type="submit">Add</button>
+        <FormBtn type="submit">Add</FormBtn>
       </form>
     );
   }

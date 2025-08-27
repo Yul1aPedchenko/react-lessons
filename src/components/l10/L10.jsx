@@ -4,6 +4,7 @@ import { TodoList } from "./TodoList";
 import { TodoEditor } from "./TodoEditor";
 import { Filter } from "./Filter";
 import { Info } from "./Info";
+import { MainWrapper, Wrapper, SubWrapper } from "./Styles/L10";
 
 export class L10 extends Component {
   state = {
@@ -44,8 +45,8 @@ export class L10 extends Component {
     };
   };
   changeFilter = (value) => {
-  this.setState({ filter: value });
-};
+    this.setState({ filter: value });
+  };
 
   getVisibleTodos = () => {
     const { todos, filter } = this.state;
@@ -57,16 +58,23 @@ export class L10 extends Component {
   render() {
     const visibleTodos = this.getVisibleTodos();
     return (
-      <>
+      <MainWrapper>
         <Info data={this.getInfo()} />
-        <Filter value={this.state.filter} onChange={this.changeFilter}></Filter>
-        <TodoEditor onSubmit={this.addTodo} />
-        <TodoList
-          todos={visibleTodos}
-          completedTodo={this.completedTodo}
-          deleteTodo={this.deletTodo}
-        />
-      </>
+        <Wrapper>
+          <SubWrapper>
+            <Filter
+              value={this.state.filter}
+              onChange={this.changeFilter}
+            ></Filter>
+            <TodoEditor onSubmit={this.addTodo} />
+          </SubWrapper>
+          <TodoList
+            todos={visibleTodos}
+            completedTodo={this.completedTodo}
+            deleteTodo={this.deletTodo}
+          />
+        </Wrapper>
+      </MainWrapper>
     );
   }
 }

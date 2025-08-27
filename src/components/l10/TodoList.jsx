@@ -1,23 +1,24 @@
 import { Component } from "react";
+import { List, Item } from "./Styles/TodoList";
 
 export class TodoList extends Component {
   render() {
     const { todos, completedTodo, deleteTodo } = this.props;
 
     return (
-      <ul>
+      <List>
         {todos.map(({ id, text, completed }) => (
-          <li key={id}>
+          <Item key={id} completed={completed}>
             <input
               type="checkbox"
               checked={completed}
               onChange={() => completedTodo(id)}
             />
             <span>{text}</span>
-            <button onClick={() => deleteTodo(id)}>Delet</button>
-          </li>
+            <button onClick={() => deleteTodo(id)}>Delete</button>
+          </Item>
         ))}
-      </ul>
+      </List>
     );
   }
 }
