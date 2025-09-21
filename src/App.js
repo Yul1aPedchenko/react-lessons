@@ -5,11 +5,15 @@ import { MainInfo } from "./components/MainInfo/MainInfo";
 import { StickerPack } from "./components/StickerPack/StickerPack";
 import { L10 } from "./components/l10/L10";
 import { L12 } from "./components/l12_13/L12";
+import { L14 } from "./components/l14/L14";
 
 function App() {
   return (
     <div className="App">
       <MainInfo />
+      <div id="l14">
+        <L14 />
+      </div>
       <div id="l12">
         <L12 />
       </div>
