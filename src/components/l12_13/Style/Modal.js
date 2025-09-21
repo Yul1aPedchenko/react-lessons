@@ -28,7 +28,6 @@ export const ModalBox = styled.div`
   max-width: 400px;
   width: 90%;
   text-align: center;
-  animation: fadeIn 0.3s ease;
 `;
 
 export const Title = styled.h2`
