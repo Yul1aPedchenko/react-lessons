@@ -10,7 +10,6 @@ import {
 const API_KEY = process.env.REACT_APP_TENOR_API_KEY;
 const BASE_URL = "https://tenor.googleapis.com/v2/search";
 
-
 export class GifList extends Component {
   state = {
     gifs: [],
@@ -71,18 +70,22 @@ export class GifList extends Component {
     return (
       <Wrapper>
         {loading ? (
-          <p style={{ color: "#fff", fontSize: "1.2rem" }}>Loading...</p>
+          <p style={{ color: "#fff"}}>Loading...</p>
         ) : (
           <GifGrid>
-            {gifs.map((gif) => (
-              <GifItem key={gif.id}>
-                <img
-                  src={gif.media_formats.gif.url}
-                  alt={gif.content_description}
-                />
-                <h3>{gif.content_description}</h3>
-              </GifItem>
-            ))}
+            {gifs && gifs.length > 0 ? (
+              gifs.map((gif) => (
+                <GifItem key={gif.id}>
+                  <img
+                    src={gif.media_formats.gif.url}
+                    alt={gif.content_description || "gif"}
+                  />
+                  <h3>{gif.content_description || "No description"}</h3>
+                </GifItem>
+              ))
+            ) : (
+              <p style={{ color: "#fff" }}>No GIFs found</p>
+            )}
           </GifGrid>
         )}
 
