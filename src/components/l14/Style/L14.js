@@ -39,6 +39,7 @@ export const Question = styled.li`
   list-style: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
   width: 40%;
+  height: fit-content;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.15);
