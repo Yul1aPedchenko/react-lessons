@@ -19,7 +19,7 @@ jobs:
         env:
           REACT_APP_TENOR_API_KEY: ${{ vars.REACT_APP_TENOR_API_KEY }}
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v2
+        uses: JamesIves/github-pages-deploy-action@v4.6.8
         with:
           branch: gh-pages
           folder: build
