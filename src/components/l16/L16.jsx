@@ -16,17 +16,13 @@ export const L16 = () => {
       text,
       completed: false,
     };
-    setTodos((prevItems) => [...prevItems, newTodo]);
+    setTodos([...todos, newTodo]);
   };
   const completedTodo = (id) => {
-    setTodos((prevTodos) => {
-      return prevTodos.map((todo) =>
-        todo.id === id ? { ...todo, completed: !todo.completed } : todo
-      )
-    });
+    setTodos(todos.map((todo) => todo.id === id ? { ...todo, completed: !todo.completed } : todo));
   };
   const deletTodo = (id) => {
-    setTodos(prevTodos => prevTodos.filter((todo) => todo.id !== id));
+    setTodos(todos.filter((todo) => todo.id !== id));
   };
 
   const getInfo = () => {
