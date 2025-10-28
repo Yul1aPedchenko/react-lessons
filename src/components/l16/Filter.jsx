@@ -1,5 +1,4 @@
 import { Input } from "./Styles/Filter";
-import { useState } from "react";
 
 export const Filter = ({ value, onChange }) => {
   const handleChange = (e) => {

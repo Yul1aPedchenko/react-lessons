@@ -8,11 +8,19 @@ import { L12 } from "./components/l12_13/L12";
 import { L14 } from "./components/l14/L14";
 import { L15 } from "./components/l15/L15";
 import { L16 } from "./components/l16/L16";
+import { L18 } from "./components/l18/L18";
+import { L19 } from "./components/l19/L19";
 
 function App() {
   return (
     <div className="App">
       <MainInfo />
+      <div id="l19">
+        <L19 />
+      </div>
+      <div id="l18">
+        <L18 />
+      </div>
       <div id="l16">
         <L16 />
       </div>

@@ -7,6 +7,9 @@ export class MainInfo extends Component {
       <Container>
         <Title>
           На цьому сайті ви знайдете практику в такій послідовності:
+          <Link href="#l19">NASA</Link>,
+          <Link href="#l18">Timer</Link>,
+          <Link href="#l16">Todos</Link>,
           <Link href="#l15">Gif Search</Link>,
           <Link href="#l14">l14/HTTP-запити</Link>,
           <Link href="#l12">Життєвий цикл</Link>,
