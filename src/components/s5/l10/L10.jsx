@@ -1,5 +1,5 @@
 import { Component } from "react";
-import initialTodos from "../../bd/l10/todo.json";
+import initialTodos from "../../../bd/l10/todo.json";
 import { TodoList } from "./TodoList";
 import { TodoEditor } from "./TodoEditor";
 import { Filter } from "./Filter";

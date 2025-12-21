@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { Sticker } from "./Sticker";
-import stickersArr from "../../bd/stickers.json";
+import stickersArr from "../../../bd/stickers.json";
 import { StickerListWrapper } from "./Styles/StickerList";
 
 export class StickerList extends Component {
